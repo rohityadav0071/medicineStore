@@ -36,18 +36,26 @@ public class UserInterface {
 	
 	int showMainMenu() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("[1] Add medicine [2] Remove medicine  [3] update [4]Print All Medicine" +
-				"[5] print only homeopathy  [6] print only allopathy [7] print only aiurvedic "
-				+ "[8]prit only yunani [9] exit ");
+		System.out.println(" [1] Add medicine \n [2] Remove medicine \n [3] update \n [4]Print All Medicine" +
+				"\n [5] print only homeopathy \n [6] print only allopathy \n [7] print only aiurvedic "
+				+ "\n [8] prit only yunani \n [9] exit ");
 		int option = scanner.nextInt();
 		return option;
 	}
 	
-	public void updateMedicine() {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter Name of the medicine");
-		String updateName = scanner.nextLine();
+	public void update(Medicine medicine) {
 		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("1. change name \n 2.change company name \n 3. change mfg date /n 4.change expdate \n change constrains ");
+		int choose = scanner.nextInt();
+		
+		switch (choose){
+		
+		case 1:
+			
+			
+			
+		}
 		
 	}
 }

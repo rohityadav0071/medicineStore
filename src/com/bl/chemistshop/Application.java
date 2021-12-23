@@ -75,7 +75,7 @@ public class Application {
 			removeMedicine();
 			break;
 		case 3:
-			
+			System.out.println("");
 			break;
 		case 4:
 			List medicineList = medicineStore.getMedicineList();
@@ -104,6 +104,16 @@ public class Application {
 		medicineStore.remove(medicine);
 		
 	}
+	
+	void updateMedicine() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter the medicine name want to Update");
+		String medicineName = scanner.nextLine();
+		Medicine medicine = medicineStore.getMedicine(medicineName);
+		userInterface.update(medicine);
+		
+	}
+	
 
 	void addMedicine() {
 
